@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import Signin from './components/Signin';
+import Post from './components/Post';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/signin" element={<Signin />} />
+            <Route path="/:postId" element={<Post />} />
           </Routes>
         </div>
       </Router>
