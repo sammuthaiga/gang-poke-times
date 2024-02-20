@@ -8,7 +8,7 @@ const Navbar = () => {
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             navigate('/about');
-        }, 2000);
+        }, 20000);
 
         // Clean up the timeout on component unmount
         return () => clearTimeout(timeoutId);
